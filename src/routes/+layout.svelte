@@ -15,6 +15,7 @@
 			analyticsId: data.analyticsId
 		});
 	}
+
 </script>
 
 <div class="app">
@@ -25,7 +26,7 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>i am using <a href="https://kit.svelte.dev">svelte-kit</a> to make this website and <a href="https://vercel.com/">vercel</a> for deployment</p>
 	</footer>
 </div>
 
