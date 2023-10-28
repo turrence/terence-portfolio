@@ -1,5 +1,5 @@
 <script>
-    import profile from '$lib/images/profile-pic.jpg';
+    import profile from '$lib/images/candid.jpg';
     import { GithubBrand, LinkedinBrand } from 'svelte-awesome-icons';
 </script>
 
@@ -29,11 +29,13 @@
 
 #profile-box {
     border: 2px solid #9B26B6;
-    padding: 10px;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 10px 20px 40px 5px var(--color-theme-2) ;
 }
 
 #pp {
-    border-radius: 25px;
+    border-radius: 100%;
     max-width: 100%;
 }
 

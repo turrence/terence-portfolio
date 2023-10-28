@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import logo from '$lib/images/icon.png';
-	
+	import resume from '$lib/TerenceTong_Resume.pdf';
 </script>
 
 <header>
@@ -18,6 +18,9 @@
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/resume' ? 'page' : undefined}>
+				<a href="/resume">Resume</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="/about">About</a>
