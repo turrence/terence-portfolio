@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import logo from '$lib/images/icon.png';
 
-	const pathsDisplay = [['/', 'Home'], ['resume', 'Resume'], ['about', 'About'], ['projects', 'Projects']]
+	const pathsDisplay = [['/', 'Home'], ['resume', 'Resume'], ['projects', 'Projects'], ['about', 'About']]
 </script>
 
 <header>

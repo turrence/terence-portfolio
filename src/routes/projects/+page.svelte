@@ -2,15 +2,42 @@
 	<title>Terence Tong | Projects</title>
 </svelte:head>
 
+<script>
+	import ProjectCard from './ProjectCard.svelte';
+	import spotifyLifeSnapshot from './static/spotify-life-snapshot.png'
+
+	const projectsDone = [
+		{
+			projectName: "spotify life snapshot playlists",
+			projectLink: "https://github.com/turrence/spotify-new-music-sorter",
+			projectImage: spotifyLifeSnapshot,
+			projectDescription: "this is a description",
+		},
+		{
+			projectName: "spotify music distributor",
+			projectLink: "https://github.com/turrence/spotify-music-distributor",
+			projectImage: "",
+			projectDescription: "this is a description of the music distributor",
+		},
+	]
+</script>
+
 <div class="main">
 	<h1>Projects</h1>
 	
 	<div>
 		<h2>Here are a list of projects that I've worked on:</h2>
-		<ul>
-			<li><a href="https://github.com/turrence/spotify-new-music-sorter">spotify life snapshot playlists</a></li>
-			<li><a href="https://github.com/turrence/spotify-music-distributor">spotify playlist distributor</a></li>
-		</ul>
+		<div class="container">
+			<div class="row">
+				{#each projectsDone as {projectName, projectLink, projectImage, projectDescription}}
+					<ProjectCard projectName={projectName} 
+						projectLink={projectLink} 
+						projectDescripton={projectDescription}
+						projectImage={projectImage}>
+					</ProjectCard>	
+				{/each}
+			</div>	
+		</div>
 	</div>
 	<div>
 		<h2>Here are some projects that I've contributed to:</h2>
