@@ -67,6 +67,12 @@
 
 
 <style>
+	.container {
+		margin: 30px;
+	}
+	h1 {
+		color: var(--color-theme-2);
+	}
 	.main {
 		padding-top: 50px;
 	}
