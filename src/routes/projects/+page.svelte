@@ -5,10 +5,7 @@
 <script>
 	import ProjectCard from './ProjectCard.svelte';
 	import spotifyLifeSnapshot from './static/spotify-life-snapshot_480x480.png'
-	import spotifyMusicDistributor from './static/spotify-music-distributor-480x480.png'
-	
-    import docker_jenkins_pipeline from '$lib/docker_jenkins_pipeline_project.pdf';
-	
+	import spotifyMusicDistributor from './static/spotify-music-distributor-480x480.png'	
 
 	const projectsDone = [
 		{
