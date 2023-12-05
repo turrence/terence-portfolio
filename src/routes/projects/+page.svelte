@@ -5,19 +5,32 @@
 <script>
 	import ProjectCard from './ProjectCard.svelte';
 	import spotifyLifeSnapshot from './static/spotify-life-snapshot_480x480.png'
+	import spotifyMusicDistributor from './static/spotify-music-distributor-480x480.png'
+	
+    import docker_jenkins_pipeline from '$lib/docker_jenkins_pipeline_project.pdf';
+	
 
 	const projectsDone = [
 		{
 			projectName: "spotify life snapshot playlists",
-			projectLink: "https://github.com/turrence/spotify-new-music-sorter",
+			projectLink: "",
+			projectGithub: "https://github.com/turrence/spotify-new-music-sorter",
 			projectImage: spotifyLifeSnapshot,
 			projectDescription: "an application that creates new playlists that are automatically populated with songs that you recently discovered" ,
 		},
 		{
 			projectName: "spotify music distributor",
-			projectLink: "https://github.com/turrence/spotify-music-distributor",
+			projectLink: "",
+			projectGithub: "https://github.com/turrence/spotify-music-distributor",
+			projectImage: spotifyMusicDistributor,
+			projectDescription: "an application that creates a machine learning model from your playlists to streamline the process of adding new songs to existing playlists",
+		},
+		{
+			projectName: "automatic deployment guide with Jenkins and Docker",
+			projectLink: "https://docs.google.com/document/d/17DYM6d1DhCHMfAKaTC3IXFHmoLdrq9xnKeRpzCetou0/edit?usp=sharing",
+			projectGithub: "https://github.com/turrence/archistar-project",
 			projectImage: "",
-			projectDescription: "this is a description of the music distributor",
+			projectDescription: "a step-by-step guide on how to create a Jenkins pipeline that pushes and pulls images from Docker",
 		},
 	]
 </script>
@@ -26,12 +39,13 @@
 	<h1>Projects</h1>
 	
 	<div>
-		<h2>Here are a list of projects that I've worked on:</h2>
+		<h2>Here are some of the projects that I've worked on:</h2>
 		<div class="container">
 			<div class="row">
-				{#each projectsDone as {projectName, projectLink, projectImage, projectDescription}}
+				{#each projectsDone as {projectName, projectLink, projectGithub, projectImage, projectDescription}}
 					<ProjectCard projectName={projectName} 
 						projectLink={projectLink} 
+						projectGithub={projectGithub}
 						projectDescripton={projectDescription}
 						projectImage={projectImage}>
 					</ProjectCard>	

@@ -9,5 +9,5 @@
 <div>
     <object title="resume" data={resume} type="application/pdf" width="100%" height="1000px">
         <p>Unable to display PDF file. <a href={resume}>Download</a> instead.</p>
-      </object>
+    </object>
 </div>
