@@ -16,6 +16,10 @@
 </div>
 
 <style>
+
+.col-4 {
+    text-align: center;
+}
 .card {
     padding: 20px;
     border-radius: 20px;

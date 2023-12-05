@@ -4,14 +4,14 @@
 
 <script>
 	import ProjectCard from './ProjectCard.svelte';
-	import spotifyLifeSnapshot from './static/spotify-life-snapshot.png'
+	import spotifyLifeSnapshot from './static/spotify-life-snapshot_480x480.png'
 
 	const projectsDone = [
 		{
 			projectName: "spotify life snapshot playlists",
 			projectLink: "https://github.com/turrence/spotify-new-music-sorter",
 			projectImage: spotifyLifeSnapshot,
-			projectDescription: "this is a description",
+			projectDescription: "an application that creates new playlists that are automatically populated with songs that you recently discovered" ,
 		},
 		{
 			projectName: "spotify music distributor",
