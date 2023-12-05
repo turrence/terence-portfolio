@@ -9,10 +9,16 @@
             <img id="pp" src={profile} alt="terence tong" />
         </div>
         <div class="col-9">
-            <p>hi! welcome to terence tong's portfolio page</p>
+            <p>Hi! Welcome to Terence Tong's portfolio page</p>
+
+            <p>
+                I'm Software Engineer whose worked at companies such as NASA JPL, Amazon, and a startup company, Route. 
+                My experience is primarily backend, but can work fullstack.
+            </p>
             
-            <p>design in progress : )</p>
-            <p>one day i will buy a raspberry pi and have a bunch of cool projects</p>
+            <p>here are some of the <a href="/projects">projects</a> i worked on</p>
+
+            <p>here is my <a href="/resume">resume</a></p>
 
             <a class='hover:outline hover:outline-1 hover:outline-offset-4 rounded-lg' href='https://www.linkedin.com/in/terence-tong/'>
                 <LinkedinBrand size='35'/>
@@ -28,7 +34,7 @@
 <style>
 
 #profile-box {
-    border: 2px solid #9B26B6;
+    border: 2px solid var(--color-theme-2);
     border-radius: 25px;
     padding: 20px;
     box-shadow: 10px 20px 40px 5px var(--color-theme-2) ;

@@ -1,7 +1,8 @@
 <script>
 	import { page } from '$app/stores';
 	import logo from '$lib/images/icon.png';
-	import resume from '$lib/TerenceTong_Resume.pdf';
+
+	const pathsDisplay = [['/', 'Home'], ['resume', 'Resume'], ['projects', 'Projects'], ['about', 'About']]
 </script>
 
 <header>
@@ -16,15 +17,11 @@
 			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
 		</svg>
 		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/resume' ? 'page' : undefined}>
-				<a href="/resume">Resume</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
-			</li>
+			{#each pathsDisplay as pathsDisplay}
+				<li aria-current={$page.url.pathname === pathsDisplay[0] ? 'page' : undefined}>
+					<a href={pathsDisplay[0]}>{pathsDisplay[1]}</a>
+				</li>
+			{/each}
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
@@ -63,7 +60,7 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
+		--background: var(--color-bg-0);
 	}
 
 	svg {
