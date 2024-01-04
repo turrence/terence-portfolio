@@ -6,8 +6,23 @@
 	import ProjectCard from './ProjectCard.svelte';
 	import spotifyLifeSnapshot from './static/spotify-life-snapshot_480x480.png'
 	import spotifyMusicDistributor from './static/spotify-music-distributor-480x480.png'	
+	import browserGame from './static/automation-of-browser-game.png'
 
 	const projectsDone = [
+		{
+			projectName: "automation of a browser game",
+			projectLink: "",
+			projectGithub: "",
+			projectImage: browserGame,
+			projectDescription: "a bot that interacts with the browser to play the game and solves basic captchas as if it was the player. Written in Python, using Selenium.",
+		},
+		{
+			projectName: "automatic deployment guide with Jenkins and Docker",
+			projectLink: "https://docs.google.com/document/d/17DYM6d1DhCHMfAKaTC3IXFHmoLdrq9xnKeRpzCetou0/edit?usp=sharing",
+			projectGithub: "https://github.com/turrence/archistar-project",
+			projectImage: "",
+			projectDescription: "a step-by-step guide on how to create a Jenkins pipeline that pushes and pulls images from Docker",
+		},
 		{
 			projectName: "spotify life snapshot playlists",
 			projectLink: "",
@@ -22,13 +37,6 @@
 			projectImage: spotifyMusicDistributor,
 			projectDescription: "an application that creates a machine learning model from your playlists to streamline the process of adding new songs to existing playlists",
 		},
-		{
-			projectName: "automatic deployment guide with Jenkins and Docker",
-			projectLink: "https://docs.google.com/document/d/17DYM6d1DhCHMfAKaTC3IXFHmoLdrq9xnKeRpzCetou0/edit?usp=sharing",
-			projectGithub: "https://github.com/turrence/archistar-project",
-			projectImage: "",
-			projectDescription: "a step-by-step guide on how to create a Jenkins pipeline that pushes and pulls images from Docker",
-		},
 	]
 </script>
 
@@ -38,16 +46,14 @@
 	<div>
 		<h2>Here are some of the projects that I've worked on:</h2>
 		<div class="container">
-			<div class="row">
-				{#each projectsDone as {projectName, projectLink, projectGithub, projectImage, projectDescription}}
-					<ProjectCard projectName={projectName} 
-						projectLink={projectLink} 
-						projectGithub={projectGithub}
-						projectDescripton={projectDescription}
-						projectImage={projectImage}>
-					</ProjectCard>	
-				{/each}
-			</div>	
+			{#each projectsDone as {projectName, projectLink, projectGithub, projectImage, projectDescription}}
+				<ProjectCard projectName={projectName} 
+					projectLink={projectLink} 
+					projectGithub={projectGithub}
+					projectDescripton={projectDescription}
+					projectImage={projectImage}>
+				</ProjectCard>	
+			{/each}
 		</div>
 	</div>
 	<div>
@@ -79,12 +85,16 @@
 
 <style>
 	.container {
-		margin: 30px;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
 	}
+
 	h1 {
 		color: var(--color-theme-2);
 	}
 	.main {
 		padding-top: 50px;
 	}
+
 </style>

@@ -1,5 +1,5 @@
 <script>
-    import profile from '$lib/images/candid.jpg';
+    import profile from '$lib/images/profile-pic.jpg';
     import { GithubBrand, LinkedinBrand } from 'svelte-awesome-icons';
 </script>
 
@@ -13,7 +13,7 @@
 
             <p>
                 I'm Software Engineer whose worked at companies such as NASA JPL, Amazon, and a startup company, Route. 
-                My experience is primarily backend, but can work fullstack.
+                My experience is primarily backend, but I can definitely work in the frontend (it might not look pretty though).
             </p>
             
             <p>here are some of the <a href="/projects">projects</a> i worked on</p>
