@@ -7,7 +7,7 @@
     import { GithubBrand, LinkSolid } from 'svelte-awesome-icons';
 </script>
 
-<div class="col-4">
+<div class="cardWrapper">
     <div class="card">
         <h4 class="card-title">{projectName}</h4>
         <div class="content">
@@ -20,7 +20,7 @@
                     <a href={projectGithub}><GithubBrand size='35'/></a>    
                 {/if}
                 {#if projectLink != ""}
-                    <a href={projectGithub}><LinkSolid size='35'/></a>    
+                    <a href={projectLink}><LinkSolid size='35'/></a>    
                 {/if}
             </div>
         </div>
@@ -28,9 +28,10 @@
 </div>
 
 <style>
-
-.col-4 {
-    text-align: center;
+.cardWrapper {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    align-self: center
 }
 
 .links {
@@ -41,7 +42,8 @@
     padding: 20px;
     border-radius: 20px;
     background-color: var(--color-bg-0);
-    /* height: 500px; */
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 img {
