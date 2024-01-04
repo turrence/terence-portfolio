@@ -7,6 +7,7 @@
 	import spotifyLifeSnapshot from './static/spotify-life-snapshot_480x480.png'
 	import spotifyMusicDistributor from './static/spotify-music-distributor-480x480.png'	
 	import browserGame from './static/automation-of-browser-game.png'
+	import portfolioPage from './static/portfolio-page.png'
 
 	const projectsDone = [
 		{
@@ -22,6 +23,13 @@
 			projectGithub: "https://github.com/turrence/archistar-project",
 			projectImage: "",
 			projectDescription: "a step-by-step guide on how to create a Jenkins pipeline that pushes and pulls images from Docker",
+		},
+		{
+			projectName: "this website :^)",
+			projectLink: "https://terence-portfolio.vercel.app/projects",
+			projectGithub: "https://github.com/turrence/terence-portfolio",
+			projectImage: portfolioPage,
+			projectDescription: "this is my first personal project that I've deployed anywhere so this was pretty exciting to me",
 		},
 		{
 			projectName: "spotify life snapshot playlists",
