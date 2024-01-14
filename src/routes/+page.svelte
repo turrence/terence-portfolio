@@ -7,12 +7,14 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
+<div class="profile">
 	<Profile />
-</section>
+</div>
+
+
 
 <style>
-	section {
+	.profile {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

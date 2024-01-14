@@ -13,7 +13,7 @@
 
             <p>
                 I'm Software Engineer whose worked at companies such as NASA JPL, Amazon, and a startup company, Route. 
-                My experience is primarily backend, but I can definitely work in the frontend (it might not look pretty though).
+                My experience is primarily backend, but I can definitely work frontend.
             </p>
             
             <p>here are some of the <a href="/projects">projects</a> i worked on</p>
@@ -37,6 +37,7 @@
     border: 2px solid var(--color-theme-2);
     border-radius: 25px;
     padding: 20px;
+    background: var(--color-bg-0);
     box-shadow: 10px 20px 40px 5px var(--color-theme-2) ;
 }
 
