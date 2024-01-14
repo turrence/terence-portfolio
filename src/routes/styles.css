@@ -13,8 +13,9 @@
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	/* darkest - lightest background */
-	--color-bg-0: #2f3e46ff;
-	--color-bg-1: #354f52ff;
+	--color-bg-0: #2f3e46; /* don't use this color for background use for items*/
+	--color-bg-1: #374D50; /* used only for background gradient */
+	--color-bg-2: #3C5656; /* used only for background gradient */
 	/* lightest to darkest color themes */
 	/* color of most text */
 	--color-theme-1: #cad2c5ff; 
@@ -35,11 +36,11 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	background-attachment: fixed;
-	background-color: var(--color-bg-1);
+	background-color: var(--color-bg-2);
 	background-size: 100vw 100vh;
 	color: var(--color-theme-1);
-	background: rgb(47,62,70);
-	background: linear-gradient(0deg, rgba(47,62,70,1) 0%, rgba(50,71,76,1) 48%, rgba(53,79,82,1) 100%); 
+	background: var(--color-bg-1);
+	background: linear-gradient(0deg, var(--color-bg-1) 0%, var(--color-bg-2) 100%); 
 }
 
 h1,
